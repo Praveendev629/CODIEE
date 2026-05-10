@@ -20,7 +20,7 @@ exports.getAIResponse = async (messages, action = 'chat') => {
     return m;
   });
   const res = await groq.chat.completions.create({
-    model: 'llama3-70b-8192',
+    model: 'llama-3.1-70b-versatile',
     messages: [{ role: 'system', content: SYSTEM }, ...formatted],
     temperature: 0.3,
     max_tokens: 4096,
@@ -30,7 +30,7 @@ exports.getAIResponse = async (messages, action = 'chat') => {
 
 exports.getCodeCompletion = async (prefix, language) => {
   const res = await groq.chat.completions.create({
-    model: 'llama3-70b-8192',
+    model: 'llama-3.1-70b-versatile',
     messages: [
       { role: 'system', content: 'Code completion engine. Return ONLY the completion, no explanations.' },
       { role: 'user', content: `Complete this ${language} code:\n\n${prefix}` },
