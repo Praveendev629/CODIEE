@@ -1,6 +1,6 @@
 const Groq = require("groq-sdk");
 const Project = require("../models/Project");
-const AIHistory = require("../models/AIHistory");
+const AIHistory = require("../models/ChatHistory");
 
 const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY,
