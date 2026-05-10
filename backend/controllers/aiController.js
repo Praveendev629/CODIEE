@@ -42,3 +42,9 @@ exports.complete = async (req, res, next) => {
     res.json({ completion });
   } catch (err) { next(err); }
 };
+
+const Groq = require("groq-sdk");
+const Project = require("../models/Project");
+const AIHistory = require("../models/ChatHistory");
+
+// everything else exactly same
