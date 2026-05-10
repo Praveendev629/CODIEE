@@ -1,0 +1,2 @@
+const C = {js:'#f7df1e',jsx:'#61dafb',ts:'#3178c6',tsx:'#3178c6',py:'#3572a5',go:'#00add8',rs:'#dea584',java:'#b07219',cs:'#178600',cpp:'#f34b7d',c:'#555',html:'#e34c26',css:'#264de4',scss:'#c6538c',json:'#fac151',md:'#519aba',yaml:'#cb171e',yml:'#cb171e',sh:'#89e051',sql:'#e38c00',php:'#4f5d95',xml:'#f1502f'};
+export function getFileIconInfo(n) { const e=n.split('.').pop().toLowerCase(); return { color: C[e]||'#9d9d9d' }; }

@@ -1,0 +1,11 @@
+const router  = require('express').Router();
+const ctrl    = require('../controllers/githubController');
+const protect = require('../middleware/auth');
+router.use(protect);
+router.get('/repos',                       ctrl.listRepos);
+router.get('/repos/:owner/:repo/contents', ctrl.getContents);
+router.get('/repos/:owner/:repo/file',     ctrl.getFile);
+router.put('/repos/:owner/:repo/file',     ctrl.updateFile);
+router.post('/repos',                      ctrl.createRepo);
+router.post('/push/:projectId',            ctrl.pushProject);
+module.exports = router;

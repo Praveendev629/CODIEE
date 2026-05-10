@@ -1,0 +1,3 @@
+const M = {js:'javascript',jsx:'javascript',ts:'typescript',tsx:'typescript',py:'python',rb:'ruby',go:'go',rs:'rust',java:'java',cs:'csharp',cpp:'cpp',c:'c',html:'html',css:'css',scss:'scss',json:'json',md:'markdown',yaml:'yaml',yml:'yaml',sh:'shell',sql:'sql',php:'php',swift:'swift',kt:'kotlin',xml:'xml'};
+export function detectLanguage(n) { if(n.toLowerCase()==='dockerfile')return'dockerfile'; return M[n.split('.').pop().toLowerCase()]||'plaintext'; }
+export function getLanguageLabel(l) { return {javascript:'JavaScript',typescript:'TypeScript',python:'Python',go:'Go',rust:'Rust',java:'Java',csharp:'C#',cpp:'C++',html:'HTML',css:'CSS',json:'JSON',markdown:'Markdown'}[l]||l; }

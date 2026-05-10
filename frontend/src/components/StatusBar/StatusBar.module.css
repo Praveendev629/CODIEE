@@ -1,0 +1,5 @@
+.bar { height:22px;background:#007acc;display:flex;align-items:center;justify-content:space-between;padding:0 8px;flex-shrink:0;font-size:12px; }
+.left,.right { display:flex;align-items:center;gap:2px; }
+.item { display:flex;align-items:center;gap:4px;padding:0 8px;height:22px;color:#fff;cursor:pointer;transition:background .15s;white-space:nowrap;border-radius:2px; }
+.item:hover { background:rgba(255,255,255,.15); }
+.connected { color:#c3e6cb; } .disconnected { color:#f8d7da; }

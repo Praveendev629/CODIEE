@@ -1,0 +1,11 @@
+.message { display:flex;gap:8px;font-size:12px; }
+.avatar { width:22px;height:22px;border-radius:50%;background:#2d2d30;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px; }
+.content { flex:1;min-width:0; }
+.body p { color:#d4d4d4;line-height:1.5;white-space:pre-wrap;word-break:break-word;margin-bottom:4px; }
+.codeBlock { background:#1e1e1e;border:1px solid #3c3c3c;border-radius:4px;margin:6px 0;overflow:hidden; }
+.codeLang { display:block;padding:3px 8px;font-size:10px;color:#9d9d9d;background:#252526;border-bottom:1px solid #3c3c3c; }
+.codeBlock pre { margin:0;padding:8px;overflow-x:auto; } .codeBlock code { font-family:'JetBrains Mono',monospace;font-size:11px;color:#d4d4d4; }
+.copy { margin-top:4px;color:#6a6a6a;display:flex;align-items:center;gap:3px;font-size:10px; } .copy:hover { color:#9d9d9d; }
+.user { flex-direction:row-reverse; }
+.user .content { background:rgba(0,122,204,.1);border:1px solid rgba(0,122,204,.2);border-radius:6px;padding:6px 10px; }
+.ai .content { background:#2d2d30;border:1px solid #3c3c3c;border-radius:6px;padding:6px 10px; }

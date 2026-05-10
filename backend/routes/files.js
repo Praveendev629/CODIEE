@@ -1,0 +1,11 @@
+const router  = require('express').Router();
+const ctrl    = require('../controllers/fileController');
+const protect = require('../middleware/auth');
+router.use(protect);
+router.get('/:projectId',            ctrl.listFiles);
+router.get('/:projectId/:fileId',    ctrl.getFile);
+router.post('/:projectId',           ctrl.createFile);
+router.put('/:projectId/:fileId',    ctrl.updateFile);
+router.delete('/:projectId/:fileId', ctrl.deleteFile);
+router.post('/:projectId/folder',    ctrl.createFolder);
+module.exports = router;

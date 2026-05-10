@@ -1,0 +1,26 @@
+{
+  "name": "codiee-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
+    "axios": "^1.6.8",
+    "file-saver": "^2.0.5",
+    "lucide-react": "^0.378.0",
+    "monaco-editor": "^0.47.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "5.0.1",
+    "socket.io-client": "^4.7.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead"],
+    "development": ["last 1 chrome version"]
+  }
+}

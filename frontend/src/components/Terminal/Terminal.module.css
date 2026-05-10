@@ -1,0 +1,9 @@
+.terminal { height:200px;background:#0d0d0d;border-top:1px solid #3c3c3c;display:flex;flex-direction:column;flex-shrink:0;font-family:'JetBrains Mono',monospace; }
+.header { display:flex;align-items:center;justify-content:space-between;padding:0 12px;height:28px;background:#252526;border-bottom:1px solid #3c3c3c;font-size:12px;color:#9d9d9d; }
+.headerLeft { display:flex;align-items:center;gap:6px; } .header button { color:#9d9d9d; } .header button:hover { color:#d4d4d4; }
+.body { flex:1;overflow-y:auto;padding:8px 12px;font-size:12px;line-height:1.6; }
+.line { white-space:pre-wrap;word-break:break-all; }
+.info { color:#9d9d9d; } .input { color:#4ec9b0; } .output { color:#d4d4d4; }
+.inputRow { display:flex;align-items:center;gap:8px;padding:6px 12px;border-top:1px solid #3c3c3c; }
+.prompt { color:#4ec9b0;font-size:12px;flex-shrink:0; }
+.input { flex:1;background:none;border:none;color:#d4d4d4;font-family:'JetBrains Mono',monospace;font-size:12px;outline:none; }

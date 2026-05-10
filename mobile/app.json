@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "Codiee",
+    "slug": "codiee",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0d0d1a"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0d0d1a"
+      },
+      "package": "com.codiee.app"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.codiee.app"
+    },
+    "extra": { "eas": { "projectId": "your-eas-project-id" } }
+  }
+}
